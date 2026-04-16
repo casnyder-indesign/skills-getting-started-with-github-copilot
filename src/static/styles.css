@@ -59,19 +59,104 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 16px;
+  border: 1px solid #d8dff7;
+  border-left: 5px solid #3f51b5;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+  box-shadow: 0 4px 12px rgba(25, 35, 126, 0.08);
 }
 
 .activity-card h4 {
   margin-bottom: 10px;
-  color: #0066cc;
+  color: #1f2a75;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.availability-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.spots-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #e8eaf6;
+  color: #1a237e;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.participants-section {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e3e8fb;
+}
+
+.participants-title {
+  margin-bottom: 8px;
+  color: #2a377d;
+  font-weight: 700;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  color: #3d476b;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+  padding: 6px 8px;
+  border: 1px solid #dfe5ff;
+  border-radius: 8px;
+  background-color: #f5f7ff;
+}
+
+.participant-email {
+  color: #2f3c7a;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.delete-participant-btn {
+  border: 1px solid #f3c2c2;
+  background-color: #fff2f2;
+  color: #b42318;
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.delete-participant-btn:hover {
+  background-color: #ffe4e4;
+  border-color: #ea9b9b;
+}
+
+.delete-participant-btn:active {
+  transform: scale(0.96);
+}
+
+.no-participants {
+  margin: 0;
+  color: #6a7396;
+  font-style: italic;
 }
 
 .form-group {
